@@ -1,0 +1,29 @@
+name: flutter_web_fastify
+description: It is a simple package but it helps you improve the loading times of flutter web
+version: 0.0.1
+maintainer: Brian Salvattore (@briansalvattore)
+homepage: https://github.com/briansalvattore/flutter_web_fastify
+repository: https://github.com/briansalvattore/flutter_web_fastify
+issue_tracker: https://github.com/briansalvattore/flutter_web_fastify/issues
+
+environment:
+  sdk: '>=2.18.2 <3.0.0'
+
+dependencies:
+  process_run: 0.13.0
+
+  string_splitter: 1.0.0+1
+  random_string: 2.3.1
+
+dev_dependencies:
+  very_good_analysis: 3.1.0
+
+  build_runner: 2.3.3
+  build_version: 2.1.1
+  resource_importer: 0.1.0+1	
+
+resource_importer:
+  resources:
+    get_chunks:
+      path: 'lib/templates/get_chunks.js'
+      type: String
