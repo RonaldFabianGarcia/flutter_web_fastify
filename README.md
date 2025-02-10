@@ -1,8 +1,20 @@
 # flutter_web_fastify
 
-- first build all
- dart pub run build_runner build
- dart run resource_importer
+- First build all
+  ```sh
+  dart pub run build_runner build
+  dart run resource_importer
+  ```
 
-- command
-flutter pub run flutter_web_fastify
+- Command
+  ```sh
+  flutter pub run flutter_web_fastify
+  ```
+
+- Command Line Examples
+  ```sh
+  flutter pub run flutter_web_fastify --wasm
+  ```
+  ```sh
+  flutter pub run flutter_web_fastify --web-renderer html
+  ```

@@ -10,7 +10,7 @@ import 'package:string_splitter/string_splitter.dart';
 Future<void> initFastify(List<String> arguments) async {
   verifyIsWebProject();
 
-  await buildFlutterWeb();
+  await buildFlutterWeb(arguments);
 
   await buildChunks();
 
@@ -27,11 +27,12 @@ void verifyIsWebProject() {
   }
 }
 
-Future<void> buildFlutterWeb() async {
+Future<void> buildFlutterWeb(List<String> arguments) async {
   final shell = Shell();
 
+  final args = arguments.join(' ');
   await shell.run('''
-  flutter build web --release --web-renderer html
+  flutter build web --release $args
   ''');
 
   print('create flutter web build');
